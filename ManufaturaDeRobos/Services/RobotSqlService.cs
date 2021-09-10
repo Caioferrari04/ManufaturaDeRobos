@@ -1,7 +1,6 @@
 ﻿using ManufaturaDeRobos.Data;
 using ManufaturaDeRobos.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

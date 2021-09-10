@@ -8500,11 +8500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
+      "projectUniqueName": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
       "projectName": "ManufaturaDeRobos",
-      "projectPath": "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
+      "projectPath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
       "packagesPath": "C:\\Users\\caio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\obj\\",
+      "outputPath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

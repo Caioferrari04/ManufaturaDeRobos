@@ -9661,11 +9661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caio\\source\\repos\\MDRTest\\MDRTest.csproj",
+      "projectUniqueName": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\MDRTest\\MDRTest.csproj",
       "projectName": "MDRTest",
-      "projectPath": "C:\\Users\\caio\\source\\repos\\MDRTest\\MDRTest.csproj",
+      "projectPath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\MDRTest\\MDRTest.csproj",
       "packagesPath": "C:\\Users\\caio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caio\\source\\repos\\MDRTest\\obj\\",
+      "outputPath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\MDRTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9685,8 +9685,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj": {
-              "projectPath": "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj"
+            "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj": {
+              "projectPath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj"
             }
           }
         }

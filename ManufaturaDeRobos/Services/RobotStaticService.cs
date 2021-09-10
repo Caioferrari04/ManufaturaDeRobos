@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace ManufaturaDeRobos.Services
 {
     public class RobotStaticService : IRobotService
     {
-        /*Aqui descansa um código desnecessariamente eficiente, que sonhou ter menos de 70 linhas, e realizou seu sonho.*/
+        /*Aqui descansa um código desnecessariamente pequeno, que sonhou ter menos de 70 linhas, e realizou seu sonho*/
         public List<Robot> All()
         {
             List<Robot> lista = new List<Robot>();

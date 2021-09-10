@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2HJDf3WQKuEg3BrB2bqNM8h+df4OFTirVm9bwrm99tvfIqdWUVzVuxCgJXbsmy28UdZx+OZZSR8QacVel3CMlw==",
+  "dgSpecHash": "1D6yKgAF6ajV1r/O15K8v+nAaf9bIF3Xg8qlb+VkPen/BnD7IgMfaBHcmihyhHq+tFrnRvchb5ZbSKuO6s+SbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caio\\source\\repos\\MDRTest\\MDRTest.csproj",
+  "projectFilePath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\MDRTest\\MDRTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caio\\.nuget\\packages\\castle.core\\4.3.1\\castle.core.4.3.1.nupkg.sha512",
     "C:\\Users\\caio\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",

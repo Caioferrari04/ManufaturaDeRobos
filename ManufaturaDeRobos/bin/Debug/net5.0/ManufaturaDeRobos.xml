@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ManufaturaDeRobos</name>
+    </assembly>
+    <members>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Index(System.String)">
+            <summary>
+            Retorna uma lista com todos os robôs cadastrados no banco, caso o usuário esteja autenticado.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Index(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Retorna um robô específico com base no id providenciado na rota.
+            </summary>
+            <param name="id"></param>
+            <param name="currentService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Randomizer(System.String)">
+            <summary>
+            Retorna um robô aleatório presente no banco de dados.
+            </summary>
+            <param name="currentService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Create(ManufaturaDeRobos.Models.Robot,System.String)">
+            <summary>
+            Cria um novo registro no banco de dados com base nas informações providas.
+            </summary>
+            <param name="robot"></param>
+            <param name="currentService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Update(ManufaturaDeRobos.Models.Robot,System.String)">
+            <summary>
+            Atualiza um registro no banco de dados com base nas informações providas, identificando que registro atualizar com base no ID.
+            </summary>
+            <param name="robot"></param>
+            <param name="currentService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.Delete(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Deleta um determinado registro do banco de dados, determinado pelo ID providenciado.
+            </summary>
+            <param name="id"></param>
+            <param name="currentService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManufaturaDeRobos.Controllers.RobotController.ProductsByRole(System.String)">
+            <summary>
+            Retorna uma lista de robôs criados por um determinado cargo.
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueFashionRetailer.Controllers.AuthController.NewUser(Microsoft.AspNetCore.Identity.IdentityUser)">
+            <summary>
+            Cria um novo registro no banco de dados com as informações providenciadas pelo usuário para autenticação.
+            </summary>
+            <param name="identityUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueFashionRetailer.Controllers.AuthController.Token(Microsoft.AspNetCore.Identity.IdentityUser)">
+            <summary>
+            Cria um token para o usuário com base nas informações providenciadas pelo mesmo.
+            </summary>
+            <param name="identityUser"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

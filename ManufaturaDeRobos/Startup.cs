@@ -1,7 +1,6 @@
 using ManufaturaDeRobos.API;
 using ManufaturaDeRobos.Data;
 using ManufaturaDeRobos.Services;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
+using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace ManufaturaDeRobos
@@ -26,24 +27,43 @@ namespace ManufaturaDeRobos
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
             services.AddControllers();
+
+            #region swagger settings
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ManufaturaDeRobos", Version = "v1" });
+                c.SwaggerDoc("v1", 
+                    new OpenApiInfo { 
+                        Title = "ManufaturaDeRobos", 
+                        Version = "v1",
+                        Description = "Manufatura de robôs -- Melhor loja para se comprar um robô para destruir a humanidade!",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Caio Silva Ferrari",
+                            Email = "caioferrari0484@gmail.com",
+                            Url = new Uri("https://github.com/Caioferrari04")
+                        }
+                    });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = $"{Path.Combine(AppContext.BaseDirectory, xmlFile)}";
+                c.IncludeXmlComments(xmlPath);
             });
+            #endregion
 
             services.AddDbContext<ManufactoryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Manufactory")));
 
             services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ManufactoryContext>();
 
+            #region transient configuration
             services.AddTransient<IRobotService, RobotSqlService>();
             services.AddTransient<RobotStaticService>();
             services.AddTransient<IAuthService, AuthService>();
+            #endregion
 
+            #region bearer auth
             var key = Encoding.ASCII.GetBytes(Configuration["Jwt:Key"]);
             services.AddAuthentication(x =>
             {
@@ -62,11 +82,10 @@ namespace ManufaturaDeRobos
                     ValidateAudience = false
                 };
             });
+            #endregion
 
-            
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())

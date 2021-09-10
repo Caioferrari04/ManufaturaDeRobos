@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net.Mime;
 
 namespace BlueFashionRetailer.Controllers
 {
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
     [ApiController]
     [Route("[controller]")]
     public class AuthController : ApiBaseController
@@ -22,6 +22,15 @@ namespace BlueFashionRetailer.Controllers
             this.service = service;
         }
 
+        #region sign up swagger comments
+        /// <summary>
+        /// Cria um novo registro no banco de dados com as informações providenciadas pelo usuário para autenticação.
+        /// </summary>
+        /// <param name="identityUser"></param>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        #endregion
         [HttpPost]
         [Route("NewUser")]
         [AllowAnonymous]
@@ -40,6 +49,15 @@ namespace BlueFashionRetailer.Controllers
             }
         }
 
+        #region token creation swagger comments
+        /// <summary>
+        /// Cria um token para o usuário com base nas informações providenciadas pelo mesmo.
+        /// </summary>
+        /// <param name="identityUser"></param>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        #endregion
         [HttpPost]
         [Route("Token")]
         [AllowAnonymous]

@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManufaturaDeRobos", "ManufaturaDeRobos.csproj", "{126B6C9D-8A89-4017-92C1-0CCE00C88C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDRTest", "..\MDRTest\MDRTest.csproj", "{B41563B0-321D-4115-A1D8-2AF9937304DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDRTest", "..\MDRTest\MDRTest.csproj", "{B41563B0-321D-4115-A1D8-2AF9937304DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F4C3641-5CC4-475A-A8BE-51291762E025}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

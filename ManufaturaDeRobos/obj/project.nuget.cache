@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/fKAwEclyQCaBmDv9KC4BVppylzWvzSDDtAajh4tE50xPWmD+8xrdEk/qL1P65L2aM55OAq5Rmnr79TzdAW9Q==",
+  "dgSpecHash": "iPX+gKaWFgI854za69JsYATb4TnYURNrT8nhUVgwUVo47tf5jZyrLsvelHMAOQavLKlm092R67yVY6YaG/GfiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caio\\source\\repos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
+  "projectFilePath": "C:\\Users\\caio\\Desktop\\ManufaturaDeRobos\\ManufaturaDeRobos\\ManufaturaDeRobos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caio\\.nuget\\packages\\castle.core\\4.3.1\\castle.core.4.3.1.nupkg.sha512",
     "C:\\Users\\caio\\.nuget\\packages\\fakeiteasy\\7.2.0\\fakeiteasy.7.2.0.nupkg.sha512",
